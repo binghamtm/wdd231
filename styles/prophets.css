@@ -1,0 +1,26 @@
+:root {
+    --background: #121212;
+    --surface-and-cards: #1e1e1e;
+    --primary-text: #e0e0e0;
+    --secondary-text: #a0a0a0;
+    --accent-color: #4fc3f7;
+    --highlight-and-hover: #1976d2;
+    --borders-and-dividers: #2c2c2c;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--primary-text);
+}
+#cards {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 400px));   
+    gap: 20px; 
+}
+
+section {
+    background-color: var(--surface-and-cards);
+    border: 2px solid var(--borders-and-dividers);
+    margin: auto;
+    text-align: center;
+}

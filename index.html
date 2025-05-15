@@ -14,24 +14,29 @@
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/courses.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
+
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
     <header>
+        <img src="images/profile.webp" alt="Thomas">
         <h1>Thomas Bingham</h1>
-        <nav class="navigation">
-            <ul>
-                <li><a href="">Home</a></li>
+        <button id="myButton"></button>
+    </header>
+    <nav class="navigation">
+            
+            <ul class="menuLinks">
+                <li id="active"><a href="">Home</a></li>
                 <li><a href="">Chamber</a></li>
                 <li><a href="">Final</a></li>
                 <li><a href="">GitHub Profile</a></li>
                 <li><a href="">LinkedIn</a></li>
             </ul>
         </nav>
-    </header>
     <main>
         <h2>Home</h2>
-        <section>
+        <section class="card">
             <h3>Course Work</h3>
             <ul>
                 <li></li>
@@ -39,23 +44,22 @@
                 <li></li>
             </ul>
         </section>
-        <section>
+        <section class="card">
             <h3>Pretoria, South Africa</h3>
             <figure>
-                <img>
-                <figcaption></figcaption>
+                <img src="images/20220517_165018.webp" alt="Pretoria">
+                <figcaption>Pretoria, South Africa</figcaption>
             </figure>
         </section>
-        <section>
+        <section class="card">
             <h3>Web and Computer Programming Certificate</h3>
             <button id="all">All</button>
             <button id="cse">CSE</button>
             <button id="wdd">WDD</button>
-            <div class="grid-container">
-            </div>
+            <div class="grid-container"></div>
         </section>
 </main>
-<footer>
+<footer class="card">
     <p>© <span id="current-year"></span> | Thomas Bingham | Utah</p>
     <p>Last Modified: <span id="last-modified"></span></p>
 </footer>    

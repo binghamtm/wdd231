@@ -1,0 +1,119 @@
+:root {
+    --background: #121212;
+    --surface-and-cards: #1e1e1e;
+    --primary-text: #e0e0e0;
+    --secondary-text: #a0a0a0;
+    --accent-color: #4fc3f7;
+    --highlight-and-hover: #1976d2;
+    --borders-and-dividers: #2c2c2c;
+    --card-heading-bg: #1565c0;
+    --active: #FFFFFF33;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    background-color: var(--background);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 75px auto 50px;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+header img {
+    width: 75px;
+}
+
+
+
+#myButton {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--primary-text);
+
+}
+
+#myButton::before {
+    content: '☰';
+    font-size: x-large;
+    
+}
+
+#myButton.open::before {
+    content: 'X';
+    font-size: x-large;
+}
+
+ul.menuLinks {
+    display: none;
+}
+
+ul.menuLinks.open {
+    display: block;
+}
+
+ul.menuLinks {
+    
+    text-align: center;
+    font-size: x-large;
+}
+
+ul.menuLinks li {
+    padding: 5px;
+}
+
+ul.menuLinks a {
+    text-decoration: none;
+    display: block;
+    color: var(--accent-color);
+}
+
+ul.menuLinks li:hover {
+    background-color: var(--active);
+}
+
+#active {
+    background-color: var(--active);
+}
+
+h1, h2, h3 {
+    color: var(--primary-text);
+}
+
+.card h3 {
+    text-align: center;
+    margin: auto;
+    background-color: var(--card-heading-bg);
+    
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.card {
+    width: 90%;
+    margin: auto;
+    background-color: var(--surface-and-cards);
+}
+
+figure img {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+}
+
