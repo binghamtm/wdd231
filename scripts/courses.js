@@ -9,7 +9,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -22,7 +22,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -34,7 +34,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -46,7 +46,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -60,7 +60,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -105,14 +105,17 @@ all.addEventListener("click", function() {
 
 function displayCourses(courseArray) 
     {
-        const mydiv = document.querySelector(".grid-container");
+        const mydiv = document.querySelector(".course-container");
         mydiv.replaceChildren();
-        for (course in courseArray) 
+        for (const course of courseArray) 
         {
             const paragraphElement = document.createElement('p');
-            paragraphElement.innerHTML = `${courseArray[course].subject} ${courseArray[course].number}`;
-            
+            paragraphElement.innerHTML = `${course.subject} ${course.number}`;
+            if (course.completed === true)
+            {
+                paragraphElement.setAttribute("class", "completed");
+            }
             mydiv.appendChild(paragraphElement);
-        
+            
         }
     }

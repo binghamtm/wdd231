@@ -1,0 +1,73 @@
+:root {
+    --background: #121212;
+    --surface-and-cards: #1e1e1e;
+    --primary-text: #e0e0e0;
+    --secondary-text: #a0a0a0;
+    --accent-color: #4fc3f7;
+    --highlight-and-hover: #1976d2;
+    --borders-and-dividers: #2c2c2c;
+    --card-heading-bg: #1565c0;
+    --active: #FFFFFF33;
+    --inter-font: "inter", sans-serif;
+}
+
+@media screen and (min-width: 600px) {
+    ul.menuLinks, ul.menuLinks.open {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        text-decoration: none;
+        background-color: var(--surface-and-cards);
+
+    }
+    .menuLinks li
+    {
+        border-radius: 5px;
+    }
+    #myButton {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 10px;
+        margin: 10px;
+    }
+
+     #section-one {
+        flex: 1 1 55%;
+        height: 100%;
+    }
+    
+   
+    #section-two {
+        
+        flex: 1 1 39%;
+        height: 100%;
+    }
+    
+    #section-one .card, #section-two .card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+  
+    #section-three {
+        flex: 1 1 100%;
+        height: 100%;
+    }
+
+    #pretoria {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .course-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+}

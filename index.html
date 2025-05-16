@@ -12,6 +12,9 @@
     <title>Home</title>
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/courses.js" defer></script>
     <script src="scripts/nav.js" defer></script>
@@ -26,40 +29,43 @@
     </header>
     <nav class="navigation">
             
-            <ul class="menuLinks">
-                <li id="active"><a href="">Home</a></li>
-                <li><a href="">Chamber</a></li>
-                <li><a href="">Final</a></li>
-                <li><a href="">GitHub Profile</a></li>
-                <li><a href="">LinkedIn</a></li>
-            </ul>
-        </nav>
+        <ul class="menuLinks">
+            <li id="active"><a href="">Home</a></li>
+            <li><a href="">Chamber</a></li>
+            <li><a href="">Final</a></li>
+            <li><a href="">GitHub Profile</a></li>
+            <li><a href="">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <h2>Home</h2>
     <main>
-        <h2>Home</h2>
-        <section class="card">
+        
+        <section class="card" id="section-one">
             <h3>Course Work</h3>
-            <ul>
+            <ul id="course-work-list">
                 <li></li>
                 <li></li>
                 <li></li>
             </ul>
         </section>
-        <section class="card">
+        <section class="card" id="section-two">
             <h3>Pretoria, South Africa</h3>
             <figure>
-                <img src="images/20220517_165018.webp" alt="Pretoria">
+                <img id="pretoria" src="images/20220517_165018.webp" alt="Pretoria">
                 <figcaption>Pretoria, South Africa</figcaption>
             </figure>
         </section>
-        <section class="card">
+        <section class="card" id="section-three">
             <h3>Web and Computer Programming Certificate</h3>
-            <button id="all">All</button>
-            <button id="cse">CSE</button>
-            <button id="wdd">WDD</button>
-            <div class="grid-container"></div>
+            <div class="flex-container">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div class="course-container"></div>
         </section>
 </main>
-<footer class="card">
+<footer>
     <p>© <span id="current-year"></span> | Thomas Bingham | Utah</p>
     <p>Last Modified: <span id="last-modified"></span></p>
 </footer>    
