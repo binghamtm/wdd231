@@ -1,0 +1,74 @@
+:root {
+    --primary: #A7D7E7;
+    --secondary: #0B1D2A;
+    --accent1: #F5F9FB;
+    --accent2: #7A8C96;
+    --highlight: #2CA5A9;
+    --call-to-action: #FF6B35;
+
+    --color-primary-light: #D6EBF3;
+    --color-secondary-dark: #071219;
+    
+    --primary-text: 'Inter', sans-serif;
+}
+
+@media screen and (min-width: 600px) {
+    ul.menu-links, ul.menu-links.open {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        text-decoration: none;
+        background-color: var(--surface-and-cards);
+
+    }
+    .menu-links li
+    {
+        border-radius: 5px;
+    }
+    #nav-button {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 10px;
+        margin: 10px;
+    }
+
+     #section-one {
+        flex: 1 1 55%;
+        height: 100%;
+    }
+    
+   
+    #section-two {
+        
+        flex: 1 1 39%;
+        height: 100%;
+    }
+    
+    #section-one .card, #section-two .card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+  
+    #section-three {
+        flex: 1 1 100%;
+        height: 100%;
+    }
+
+    #pretoria {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .course-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+}

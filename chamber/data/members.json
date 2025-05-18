@@ -25,7 +25,7 @@
             "membership-level": "member"
         },
         {
-            "name": "Bibble's Bonfire Boys",
+            "name": "Bibble's Bonfire Blaze Boys",
             "address": "99 Glacier Glide Blvd Firehole Basin, Antarctica 00999",
             "phone": "(800) 555-0099",
             "website": "www.wedidntstartthefire.com",
@@ -35,8 +35,8 @@
         {
             "name": "Reincarnation Creation",
             "address": "14 Igloo Alley Aurora Borough, Antarctica 00114",
-            "phone": "www.reincarnationcreation.com",
-            "website": "(800) 555-0114",
+            "phone": "(800) 555-0114",
+            "website": "www.reincarnationcreation.com",
             "image": "images/reincarnation.webp",
             "membership-level": "member"
         },

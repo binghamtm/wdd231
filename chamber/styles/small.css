@@ -11,3 +11,160 @@
     
     --primary-text: 'Inter', sans-serif;
 }
+
+
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    background-color: var(--background);
+    font-family: var(--inter-font);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 75px auto 50px;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--surface-and-cards);
+}
+
+header img {
+    width: 75px;
+}
+
+
+
+#nav-button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--primary-text);
+
+}
+
+#nav-button::before {
+    content: '☰';
+    font-size: x-large;
+    
+}
+
+#nav-button.open::before {
+    content: 'X';
+    font-size: x-large;
+}
+
+ul.menu-links {
+    display: none;
+}
+
+ul.menu-links.open {
+    display: block;
+}
+
+ul.menu-links {
+    
+    text-align: center;
+    font-size: x-large;
+    list-style-type: none;
+}
+
+ul.menu-links li {
+    padding: 5px;
+}
+
+ul.menu-links a {
+    text-decoration: none;
+    display: block;
+    color: var(--accent-color);
+}
+
+ul.menu-links li:hover {
+    background-color: var(--active);
+}
+
+#active {
+    background-color: var(--active);
+}
+
+h1, h2, h3 {
+    color: var(--primary-text);
+}
+
+.card h3 {
+    text-align: center;
+    margin: auto;
+    background-color: var(--card-heading-bg);
+    
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+    
+}
+
+.card {
+    width: 90%;
+    margin: auto;
+    background-color: var(--surface-and-cards);
+    border: 1px solid var(--borders-and-dividers);
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+
+
+#course-work-list li {
+    margin-left: 30px;
+}
+
+figure img {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    color: var(--secondary-text);
+}
+
+.card button {
+    width: 32%;
+    max-width: 100px;
+    margin-top: 15px;
+    background-color: var(--accent-color);
+    color: var(--background);
+    font-size: x-large;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.course-container p {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    background-color: var(--primary-text);
+    color: var(--background);
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.course-container p.completed {
+    background-color: var(--accent-color);
+}
+
+footer {
+    background-color: var(--surface-and-cards);
+    text-align: center;
+    color: var(--secondary-text);
+}
