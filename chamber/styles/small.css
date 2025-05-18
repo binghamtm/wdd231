@@ -1,0 +1,13 @@
+:root {
+    --primary: #A7D7E7;
+    --secondary: #0B1D2A;
+    --accent1: #F5F9FB;
+    --accent2: #7A8C96;
+    --highlight: #2CA5A9;
+    --call-to-action: #FF6B35;
+
+    --color-primary-light: #D6EBF3;
+    --color-secondary-dark: #071219;
+    
+    --primary-text: 'Inter', sans-serif;
+}

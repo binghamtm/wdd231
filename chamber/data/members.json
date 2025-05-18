@@ -1,0 +1,60 @@
+{
+    "businesses": [
+        {
+            "name": "Kagressive Insurance",
+            "address": "1 Frostbite Lane Penguin Point, Antarctica 00001",
+            "phone": "(800) 555-0191",
+            "website": "www.bekagressive.com",
+            "image": "images/kagressive.webp",
+            "membership-level": "gold"
+        },
+        {
+            "name": "Wild Kard Kafe",
+            "address": "42 Icecap Circle Chillville, Antarctica 00042",
+            "phone": "(800) 555-0142",
+            "website": "www.reversewildcard.com",
+            "image": "images/wildcard.webp",
+            "membership-level": "member"
+        },
+        {
+            "name": "The Braincell Besties & Co",
+            "address": "7 Waddle Way Emperor Heights, Antarctica 00007",
+            "phone": "(800) 555-0177",
+            "website": "www.onlyonebraincell.com",
+            "image": "images/braincell.webp",
+            "membership-level": "member"
+        },
+        {
+            "name": "Bibble's Bonfire Boys",
+            "address": "99 Glacier Glide Blvd Firehole Basin, Antarctica 00999",
+            "phone": "(800) 555-0099",
+            "website": "www.wedidntstartthefire.com",
+            "image": "images/bibble.webp",
+            "membership-level": "silver"
+        },
+        {
+            "name": "Reincarnation Creation",
+            "address": "14 Igloo Alley Aurora Borough, Antarctica 00114",
+            "phone": "www.reincarnationcreation.com",
+            "website": "(800) 555-0114",
+            "image": "images/reincarnation.webp",
+            "membership-level": "member"
+        },
+        {
+            "name": "Kolonel Hackworths Private Investigator Services",
+            "address": "65 Tundra Trail Seal Rock, Antarctica 00065",
+            "phone": "(800) 555-0165",
+            "website": "www.kolonelhackworth.com",
+            "image": "images/hackworth.webp",
+            "membership-level": "gold"
+        },
+         {
+            "name": "The Bridge",
+            "address": "88 South Pole Parkway Polar Haven, Antarctica 00888",
+            "phone": "(800) 555-0888",
+            "website": "www.thebridge.org",
+            "image": "images/bridge.webp",
+            "membership-level": "silver"
+        }
+    ]
+}
