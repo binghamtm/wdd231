@@ -46,6 +46,7 @@ function construct(businesses) {
         membership.innerText = ` ${business["membership-level"].charAt(0).toUpperCase() + business["membership-level"].slice(1).toLowerCase()} Tier`;
         logo.setAttribute("src", business.image);
         logo.setAttribute("alt", business.name);
+        logo.setAttribute("loading", "lazy");
         phone.innerText = business.phone;
         address.innerText = business.address;
         website.innerText = business.website;

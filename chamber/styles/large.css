@@ -29,46 +29,25 @@
         display: none;
     }
 
-    main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: stretch;
-        gap: 10px;
-        margin: 10px;
+    #business-container {
+        margin-right: 100px;
+        margin-left: 100px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
-     #section-one {
-        flex: 1 1 55%;
-        height: 100%;
-    }
+    
+
+     
     
    
-    #section-two {
-        
-        flex: 1 1 39%;
-        height: 100%;
-    }
     
-    #section-one .card, #section-two .card {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
+    
+    
   
-    #section-three {
-        flex: 1 1 100%;
-        height: 100%;
-    }
+    
 
-    #pretoria {
-        width: 80%;
-        max-width: 300px;
-    }
+    
 
-    .course-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        
-    }
+    
 }

@@ -20,12 +20,12 @@
 </head>
 <body>
     <header>
-        <img src="images/penguin.webp" alt="penguin">
+        <img src="images/penguin.webp" alt="penguin" loading="lazy" width="75px" height="75px">
         <div>
             <h1>Antarctica</h1>
             <h2>Chamber of Commerce</h2>
         </div>
-        <button id="nav-button"></button>
+        <button id="nav-button" aria-label="menu toggle"></button>
     </header>
     <nav>
         <ul class="menu-links">
@@ -36,10 +36,12 @@
         </ul>
     </nav>
     <main>
-        <img src="images/hero-image.webp" alt="Antarctica">
+        <img id="hero" src="images/hero-image.webp" alt="Antarctica" loading="lazy">
         <h2>Directory</h2>
-        <button id="list-button"><img src="images/list.webp" alt="list"></button>
-        <button id="grid-button"><img src="images/grid.webp" alt="grid"></button>
+        <div id="toggle-buttons">
+            <button id="list-button" aria-label="list view"><img src="images/list.webp" alt="list" loading="lazy"></button>
+            <button id="grid-button" aria-label="grid view"><img src="images/grid.webp" alt="grid" loading="lazy"></button>
+        </div>
         <div id="business-container"></div>
     </main>
     <footer>
