@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Thomas Bingham">
-    <meta name="description" content="Directory Page for Antarctica chamber of Commerce">
-    <meta property="og:title" content="WDD Home Page">
-    <meta property="og:description" content="The home page for all web design assignements">
+    <meta name="description" content="Home Page for Antarctica chamber of Commerce">
+    <meta property="og:title" content="Home page for Antarctica chamber of Commerce">
+    <meta property="og:description" content="Home page for Antarctica chamber of Commerce">
     <meta property="og:image" content="https://binghamtm.github.io/wdd231/chamber/images/hero-image.webp">
     <meta property="og:url" content="https://binghamtm.github.io/wdd231/chamber/directory.html">
     <title>Antarctica Chamber of Commerce</title>
@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/nav.js" defer></script>
-    <script src="scripts/businesses.js" defer></script>
 </head>
 <body>
     <header>
@@ -29,20 +28,31 @@
     </header>
     <nav>
         <ul class="menu-links">
-            <li><a href="https://binghamtm.github.io/wdd231/chamber/index.html">Home</a></li>
-            <li class="active"><a href="https://binghamtm.github.io/wdd231/chamber/directory.html">Directory</a></li>
+            <li class="active"><a href="https://binghamtm.github.io/wdd231/chamber/index.html">Home</a></li>
+            <li><a href="https://binghamtm.github.io/wdd231/chamber/directory.html">Directory</a></li>
             <li><a href="">Join</a></li>
             <li><a href="">Discover</a></li>
         </ul>
     </nav>
     <main>
-        
-        <h2>Directory</h2>
-        <div id="toggle-buttons">
-            <button id="list-button" aria-label="list view"><img src="images/list.webp" alt="list" loading="lazy"></button>
-            <button id="grid-button" aria-label="grid view"><img src="images/grid.webp" alt="grid" loading="lazy"></button>
+        <img id="hero" src="images/hero-image.webp" alt="Antarctica" loading="lazy">
+        <button id="call-to-action" aria-label="find a business" onclick="window.location.href='https://binghamtm.github.io/wdd231/chamber/directory.html';">Find A business</button>
+        <h2>Home</h2>
+        <div id="row-one">
+            <section>
+                <h3>Events</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore iste natus optio aperiam, officiis modi dicta ratione dolore laborum. Corporis culpa magnam possimus velit aut dignissimos vero omnis fugiat dolore?</p>
+            </section>
+            <section>
+                <h3>Current Weather</h3>
+            </section>
+            <section>
+                <h3>Weather Forecast</h3>
+            </section>
         </div>
-        <div id="business-container"></div>
+        <div id="row-two">
+
+        </div>
     </main>
     <footer>
         <p>© <span id="current-year"></span> | Thomas Bingham | Utah</p>
