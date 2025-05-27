@@ -3,37 +3,35 @@
 
 
 const businessCards = document.getElementById("row-two");
-const data = getData();
 
-const filteredData = filterData(data);
 
-const randomData = randomThree(filteredData);
 
-construct(randomData);
+
+
+
 
 
 function randomThree(data) {
-    const filteredData = {};
+    const randomData = [];
     for (let i = 0; i < 3; i++) {
-        const random = Math.random() * data.length();
-        filteredData.add(data[random]);
-        data.remove(random);
+        const random = Math.floor(Math.random() * data.length);
+        
+        
+        randomData.push(data[random]);
+        data.splice(random, 1);
     }
-    return filteredData();
+    construct(randomData);
 }
 
 function filterData(data) {
-    const filteredData = data.filter(dataPoint => dataPoint.membership-level === "gold" || dataPoint.membership-level === "silver");
-    return filteredData;
+    const filteredData = data.filter(dataPoint => dataPoint["membership-level"] === "gold" || dataPoint["membership-level"] === "silver");
+    randomThree(filteredData);
 }
-
-
-
 
 async function getData() {
     const response = await fetch('https://binghamtm.github.io/wdd231/chamber/data/members.json');
     const data = await response.json();
-    return data;
+    filterData(data.businesses);
 }
 
 function construct(businesses) {
@@ -67,3 +65,5 @@ function construct(businesses) {
         businessCards.appendChild(card);
     });
 }
+
+getData();

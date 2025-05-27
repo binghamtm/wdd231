@@ -148,6 +148,44 @@ h1, h2, h3 {
     display: none;
 }
 
+#hero-container {
+    position: relative;
+}    
+
+#call-to-action {
+    position: absolute;
+    background-color: var(--accent1);
+    border: 2px solid var(--accent2);
+    border-radius: 5px;
+    font-size: larger;
+    padding: 3px;
+    bottom: 10px;
+    right: 10px;
+}
+
+#row-one {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#events {
+    flex: 2;
+    min-width: 320px;
+    justify-content: center;
+    align-items: center;
+}
+
+#current-weather {
+    flex: 1;
+    margin: 50px;
+    min-width: 300px;
+}
+
+#weather-forecast {
+    flex: 1;
+    min-width: 300px;
+}
+
 footer {
 
     text-align: center;

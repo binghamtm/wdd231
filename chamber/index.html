@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/nav.js" defer></script>
+    <script src="scripts/random-business.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 <body>
     <header>
@@ -35,19 +37,30 @@
         </ul>
     </nav>
     <main>
-        <img id="hero" src="images/hero-image.webp" alt="Antarctica" loading="lazy">
-        <button id="call-to-action" aria-label="find a business" onclick="window.location.href='https://binghamtm.github.io/wdd231/chamber/directory.html';">Find A business</button>
-        <h2>Home</h2>
+        <div id="hero-container">
+            <img id="hero" src="images/hero-image.webp" alt="Antarctica" loading="lazy">
+            <button id="call-to-action" aria-label="find a business" onclick="window.location.href='https://binghamtm.github.io/wdd231/chamber/directory.html';">Find A business</button>
+        </div>
+            <h2>Home</h2>
         <div id="row-one">
-            <section>
+            <section id="events">
                 <h3>Events</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore iste natus optio aperiam, officiis modi dicta ratione dolore laborum. Corporis culpa magnam possimus velit aut dignissimos vero omnis fugiat dolore?</p>
             </section>
-            <section>
+            <section id="current-weather">
                 <h3>Current Weather</h3>
+                <div class="card">
+                    <h4 id="town"></h4>
+                    <img id="graphic" src="" alt="">
+                    <p id="description"></p>
+                    <p id="temperature"></p>
+                </div>
             </section>
-            <section>
+            <section id="weather-forecast">
                 <h3>Weather Forecast</h3>
+                <div class="card" id="forecast">
+                    
+                </div>
             </section>
         </div>
         <div id="row-two">
