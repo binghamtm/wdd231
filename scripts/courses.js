@@ -111,6 +111,7 @@ function displayCourses(courseArray)
         {
             const paragraphElement = document.createElement('p');
             paragraphElement.innerHTML = `${course.subject} ${course.number}`;
+            paragraphElement.setAttribute("class", "course");
             if (course.completed === true)
             {
                 paragraphElement.setAttribute("class", "completed");

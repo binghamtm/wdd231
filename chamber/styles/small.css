@@ -163,6 +163,12 @@ h1, h2, h3 {
     right: 10px;
 }
 
+#join-instruction {
+    text-align: center;
+    margin: 20px;
+
+}
+
 #row-one {
     display: flex;
     flex-wrap: wrap;
@@ -184,6 +190,77 @@ h1, h2, h3 {
 #weather-forecast {
     flex: 1;
     min-width: 300px;
+}
+
+dialog {
+    margin: auto;
+    width: 300px;
+}
+dialog button {
+    float: right;
+}
+
+form  {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    
+    
+}
+
+form * {
+    width: 400px;
+    max-width: 80%;
+    text-align: center;
+    
+}
+
+form input {
+    height: 30px;
+}
+
+#business-cards {
+    text-align: center;
+    
+}
+
+#business-cards div {
+    width: 60%;
+    padding: 20px;
+    border: 2px solid var(--highlight);
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+    
+}
+
+#business-cards > :nth-child(1) {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+#business-cards > :nth-child(2) {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+#business-cards > :nth-child(3) {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+
+#business-cards > :nth-child(4) {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 3s;
 }
 
 footer {
