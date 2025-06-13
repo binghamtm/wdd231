@@ -1,0 +1,20 @@
+:root {
+  --background: #1F1F1F;       /* Gunmetal Gray */
+  --primary: #B6862C;          /* Brass Gold */
+  --secondary: #101010;        /* Matte Black */
+  --accent1: #C2362C;          /* Safety Red */
+  --accent2: #F3F3F3;          /* Target White */
+  --hover-detail: #556B2F;     /* Olive Drab */
+  --primary-text: 'Anton', sans-serif;
+}
+
+* {
+  font-family: var(--primary-text);
+  
+}
+
+body {
+  background-color: var(--background);
+  color: var(--primary);
+}
+
