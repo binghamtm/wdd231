@@ -263,6 +263,45 @@ form input {
     animation-delay: 3s;
 }
 
+
+#places section {
+    text-align: center;
+    margin: 10px auto;
+    max-width: 300px;
+    gap: 10px;
+    display: grid;
+    overflow: hidden;
+
+    grid-template-areas: 
+    "photograph"
+    "title"
+    "description"
+    "location"
+    "learn-more";
+
+}
+
+#places section h3 {
+    grid-area: title;
+}
+
+#places section img {
+    width: 100%;
+    grid-area: photograph;
+}
+
+#places section .address {
+    grid-area: location;
+}
+
+#places section .description {
+    grid-area: description;
+}
+
+#places section button {
+    grid-area: learn-more;
+}
+
 footer {
 
     text-align: center;

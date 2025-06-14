@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Thomas Bingham">
+    <meta name="description" content="Home Page for Antarctica chamber of Commerce">
+    <meta property="og:title" content="Home page for Antarctica chamber of Commerce">
+    <meta property="og:description" content="Home page for Antarctica chamber of Commerce">
+    <meta property="og:image" content="https://binghamtm.github.io/wdd231/chamber/images/hero-image.webp">
+    <meta property="og:url" content="https://binghamtm.github.io/wdd231/chamber/directory.html">
+    <title>Antarctica Chamber of Commerce</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <img src="images/penguin.webp" alt="penguin" loading="lazy" width="75" height="75">
+        <div>
+            <h1>Antarctica</h1>
+            <h2>Chamber of Commerce</h2>
+        </div>
+        <button id="nav-button" aria-label="menu toggle"></button>
+    </header>
+    <nav>
+        <ul class="menu-links">
+            <li ><a href="https://binghamtm.github.io/wdd231/chamber/index.html">Home</a></li>
+            <li><a href="https://binghamtm.github.io/wdd231/chamber/directory.html">Directory</a></li>
+            <li><a href="https://binghamtm.github.io/wdd231/chamber/join.html">Join</a></li>
+            <li><a class="active" href="https://binghamtm.github.io/wdd231/chamber/discover.html">Discover</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="places"></div>
+    </main>
+    <footer>
+        <p>© <span id="current-year"></span> | Thomas Bingham | Utah</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>

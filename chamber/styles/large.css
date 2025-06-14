@@ -12,7 +12,7 @@
     --primary-text: 'Inter', sans-serif;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1025px) {
     ul.menu-links, ul.menu-links.open {
         display: flex;
         justify-content: center;
@@ -36,9 +36,19 @@
         margin-bottom: 50px;
     }
 
+    #places {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     
-
-     
+    #places section {
+        grid-template-areas: 
+        "photograph title"
+        "photograph description"
+        "photograph location"
+        "photograph learn-more";
+        max-width: 500px;
+    }
     
    
     
