@@ -8,3 +8,7 @@
         max-width: 600px;
     }
 }
+
+#places section img:hover {
+    transform: scale(1.1);
+}

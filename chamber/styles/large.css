@@ -50,7 +50,9 @@
         max-width: 500px;
     }
     
-   
+   #places section img:hover {
+    transform: scale(1.1);
+}
     
     
     
