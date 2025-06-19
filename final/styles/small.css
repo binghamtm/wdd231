@@ -112,6 +112,10 @@ dialog button {
     float: right;
 }
 
+#home-main h2, p{
+    padding: 20px;
+}
+
 /*form styling for range info page*/
 form  {
     display: flex;
