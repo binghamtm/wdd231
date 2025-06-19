@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Thomas Bingham">
+    <meta name="description" content="Home Page for Trigger Happy Gun Range">
+    <meta property="og:title" content="Home Page for Trigger Happy Gun Range">
+    <meta property="og:description" content="Home Page for Trigger Happy Gun Range">
+    <meta property="og:image" content="https://binghamtm.github.io/wdd231/chamber/images/hero-image.webp">
+    <meta property="og:url" content="https://binghamtm.github.io/wdd231/chamber/directory.html">
+    <title>Trigger Happy Home</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/target2.webp" alt="target" loading="lazy" width="75" height="75">
+        <div>
+            <h1>Trigger Happy</h1>
+            <h2>Gun Range and Rentals</h2>
+        </div>
+        <button id="nav-button" aria-label="menu toggle"></button>
+    </header>
+    <nav>
+        <ul class="menu-links">
+            <li class="active"><a href="https://binghamtm.github.io/wdd231/final/index.html">Home</a></li>
+            <li><a href="">Range Info</a></li>
+            <li><a href="">Rentals</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Welcome, <span id="user-name"></span>, to Triger Happy Range and Rentals!</h1>
+        <div id="hero-container">
+            <img id="hero" src="images/gun range.webp" alt="Antarctica" loading="lazy">
+        </div>
+
+        <h1>The Trigger Happy experience</h1>
+        <p>WE ARE THE LARGEST INDOOR SHOOTING RANGE IN THE MOUNTAIN WEST AND OFFER ONE OF THE WIDEST VARIETY OF RANGE
+            OPTIONS IN THE COUNTRY.</p>
+        <div id="lane-options">
+            <h3>25-yard traditional lanes that are located in 75 square foot booths</h3>
+            <h3>100-yard lanes with 85 square-foot private booths and Action Target's AWD retrieval sysstem that offers
+                27 different scenarios and games</h3>
+            <h3>100 square-foot Private booths in the Nations first indoor clay pigeon range</h3>
+        </div>
+        <dialog id="name-input">
+            <button id="closeButton">❌</button>
+            <form>
+                <label for="given-name">Please input your first name</label>
+                <input type="text" id="given-name" name="given-name" autocomplete="on" title="Enter your First Name"
+                    required>
+                <button id="name-button" type="button">Continue</button>
+            </form>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>© <span id="current-year"></span> | Thomas Bingham | Utah</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>

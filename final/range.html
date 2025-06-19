@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Thomas Bingham">
+    <meta name="description" content="Range Page for Trigger Happy Gun Range">
+    <meta property="og:title" content="Range Page for Trigger Happy Gun Range">
+    <meta property="og:description" content="Home Page for Trigger Happy Gun Range">
+    <meta property="og:image" content="https://binghamtm.github.io/wdd231/chamber/images/hero-image.webp">
+    <meta property="og:url" content="https://binghamtm.github.io/wdd231/chamber/directory.html">
+    <title>Range</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/target2.webp" alt="target" loading="lazy" width="75" height="75">
+        <div>
+            <h1>Trigger Happy</h1>
+            <h2>Gun Range and Rentals</h2>
+        </div>
+        <button id="nav-button" aria-label="menu toggle"></button>
+    </header>
+    <nav>
+        <ul class="menu-links">
+            <li><a href="https://binghamtm.github.io/wdd231/final/index.html">Home</a></li>
+            <li class="active"><a href="https://binghamtm.github.io/wdd231/final/range.html">Range Info</a></li>
+            <li><a href="https://binghamtm.github.io/wdd231/final/rentals.html">Rentals</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>The Trigger Happy experience</h1>
+        <p>WE ARE THE LARGEST INDOOR SHOOTING RANGE IN THE MOUNTAIN WEST AND OFFER ONE OF THE WIDEST VARIETY OF RANGE OPTIONS IN THE COUNTRY.</p>
+        <div id="lane-options">
+            <h3>25-yard traditional lanes that are located in 75 square foot booths</h3>
+            <h3>100-yard lanes with 85 square-foot private booths and Action Target's AWD retrieval sysstem that offers 27 different scenarios and games</h3>
+            <h3>100 square-foot Private booths in the Nations first indoor clay pigeon range</h3>
+        </div>
+        
+            <h3 id="join-instruction">Connect with us!</h3>
+        <form method="get">
+            <label for="given-name">First Name</label>
+            <input type="text" id="given-name" name="given-name" autocomplete="on" title="Enter your First Name" required>
+            <label for="family-name">Last Name</label>
+            <input type="text" id="family-name" name="family-name" autocomplete="on" title="Enter your Last Name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="on" title="Enter your email" placeholder="johndoe@gmail.com" required>
+            <label for="tel">Mobile Phone</label>
+            <input type="tel" id="tel" name="tel" autocomplete="on" title="Enter your mobile phone number" required>
+            <label for="questions">What questions do you have for us?</label>
+            <textarea id="questions" name="questions" title="Enter your questions here" required></textarea>
+            <button type="submit">Continue</button>
+        </form>
+    </main>
+    <footer>
+        <p>© <span id="current-year"></span> | Thomas Bingham | Utah</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>

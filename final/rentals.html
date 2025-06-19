@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Thomas Bingham">
+    <meta name="description" content="Range Page for Trigger Happy Gun Range">
+    <meta property="og:title" content="Range Page for Trigger Happy Gun Range">
+    <meta property="og:description" content="Home Page for Trigger Happy Gun Range">
+    <meta property="og:image" content="https://binghamtm.github.io/wdd231/chamber/images/hero-image.webp">
+    <meta property="og:url" content="https://binghamtm.github.io/wdd231/chamber/directory.html">
+    <title>Rentals</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/rentalList.mjs" type="module"></script>
+    <script src="scripts/rentals.mjs" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/target2.webp" alt="target" loading="lazy" width="75" height="75">
+        <div>
+            <h1>Trigger Happy</h1>
+            <h2>Gun Range and Rentals</h2>
+        </div>
+        <button id="nav-button" aria-label="menu toggle"></button>
+    </header>
+    <nav>
+        <ul class="menu-links">
+            <li><a href="https://binghamtm.github.io/wdd231/final/index.html">Home</a></li>
+            <li><a href="https://binghamtm.github.io/wdd231/final/range.html">Range Info</a></li>
+            <li class="active"><a href="https://binghamtm.github.io/wdd231/final/rentals.html">Rentals</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Choose from a variety of rental guns</h1>
+        <button class="gun-button" id="all">All</button>
+        <button class="gun-button" id="pistol">Pistols</button>
+        <button class="gun-button" id="revolver">Revolvers</button>
+        <button class="gun-button" id="rifle">Rifles</button>
+        <button class="gun-button" id="shotgun">Shotguns</button>
+
+        <div id="rentals-container"></div>
+    </main>
+    <footer>
+        <p>© <span id="current-year"></span> | Thomas Bingham | Utah</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>
