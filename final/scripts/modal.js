@@ -5,15 +5,29 @@ const nameButton = document.getElementById("name-button");
 const givenName = document.getElementById("given-name");
 const userName = document.getElementById("user-name");
 
-localStorage.setItem('userName', 'Guest');
 
-document.addEventListener("DOMContentLoaded", () => {
-    myDialog.showModal();
+
+
+
+    if (localStorage.getItem('visitCount')) {
+        let visitCount = Number(localStorage.getItem('visitCount'));
+        visitCount += 1;
+        localStorage.setItem('visitCount', visitCount);
+        userName.innerHTML = localStorage.getItem('userName');
+    }
+    else {
+        myDialog.showModal();
+        localStorage.setItem('visitCount', 1);
+        
+        userName.innerHTML = localStorage.getItem('userName');
+    }
     
-});
+    
+
 
 closeButton.addEventListener("click", () => {
     myDialog.close();
+    localStorage.setItem('userName', 'Guest');
     userName.innerHTML = localStorage.getItem('userName');
 })
 
