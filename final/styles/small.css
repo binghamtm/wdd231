@@ -112,7 +112,7 @@ dialog button {
     float: right;
 }
 
-#home-main h2, p{
+main h2, p, h3{
     padding: 20px;
 }
 
@@ -127,15 +127,25 @@ form  {
     
 }
 
+form {
+    margin: 30px;
+}
+
 form * {
     width: 400px;
     max-width: 80%;
     text-align: center;
-    
+    border-radius: 10px;
 }
 
 form input {
     height: 30px;
+}
+
+form button {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
 }
 
 /*gun rental styling*/
